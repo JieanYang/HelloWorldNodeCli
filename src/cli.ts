@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import chalk from 'chalk';
+import { red } from 'chalk';
 
 const main = (argv: string[]) => {
 	const program = require('commander');
@@ -10,7 +10,7 @@ const main = (argv: string[]) => {
 
 	const options = program.opts();
 	if (options.verbose) console.log(options);
-	console.log(chalk.red('this will be red text'));
+	console.log(red('this will be red text'));
 };
 
 main(process.argv);
