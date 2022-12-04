@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-import { ELogLevel, logger } from './utils';
-
-import { callChucknorris } from '../demo/TCall';
+import { callChucknorris } from './utils/TCall';
+import { ELogLevel, logger } from './utils/TLogger';
 
 const main = async (argv: string[]) => {
 	const program = require('commander');
@@ -18,6 +17,7 @@ const main = async (argv: string[]) => {
 	logger.log('this will be cyan text');
 	logger.error('this will be red text');
 	const data = await callChucknorris();
+	console.log('yang 2');
 	console.log('data', data);
 };
 
