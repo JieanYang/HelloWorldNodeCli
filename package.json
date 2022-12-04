@@ -1,11 +1,12 @@
 {
-	"name": "chuck-norris",
+	"name": "batman-cli",
 	"description": "Get a joke from the Chuck Norris API",
 	"version": "0.0.1",
 	"license": "UNLICENSED",
 	"bin": {
 		"chuckNorris": "index.js",
-		"joke": "index.js"
+		"joke": "index.js",
+		"batman-cli": "lib/cli.js"
 	},
 	"author": {
 		"name": "Jiean Yang",
