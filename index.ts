@@ -7,7 +7,7 @@
  * @author Jiean Yang <https://wemediaweb.com/>
  */
 
-const init = require('./utils/init');
+const init = require('./utils/init.ts');
 const cli = require('./utils/cli');
 const log = require('./utils/log');
 
@@ -17,6 +17,7 @@ const { clear, debug } = flags;
 
 (async () => {
 	init({ clear });
+	console.log('input', input);
 	input.includes(`help`) && cli.showHelp(0);
 
 	debug && log(flags);
