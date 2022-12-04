@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { red } from 'chalk';
 import { logger } from './utils';
 
 const main = (argv: string[]) => {
@@ -11,7 +10,8 @@ const main = (argv: string[]) => {
 
 	const options = program.opts();
 	if (options.verbose) console.log(options);
-	logger.log('this will be red text');
+	logger.log('this will be cyan text');
+	logger.error('this will be red text');
 };
 
 main(process.argv);
