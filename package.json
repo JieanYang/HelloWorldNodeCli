@@ -4,9 +4,9 @@
 	"version": "0.0.1",
 	"license": "UNLICENSED",
 	"bin": {
-		"chuckNorris": "index.js",
-		"joke": "index.js",
-		"batman-cli": "lib/cli.js"
+		"chuckNorris": "lib/index.js",
+		"joke": "lib/index.js",
+		"batman-cli": "lib/src/cli.js"
 	},
 	"author": {
 		"name": "Jiean Yang",
