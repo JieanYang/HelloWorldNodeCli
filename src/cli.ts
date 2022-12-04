@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { logger } from './utils';
+import { ELogLevel, logger } from './utils';
 
 const main = (argv: string[]) => {
 	const program = require('commander');
@@ -10,6 +10,9 @@ const main = (argv: string[]) => {
 
 	const options = program.opts();
 	if (options.verbose) console.log(options);
+	logger.log('this will be cyan text');
+	logger.error('this will be red text');
+	logger.setLogLevel(ELogLevel.ERROR);
 	logger.log('this will be cyan text');
 	logger.error('this will be red text');
 };
