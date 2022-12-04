@@ -2,7 +2,9 @@
 
 import { ELogLevel, logger } from './utils';
 
-const main = (argv: string[]) => {
+import { callChucknorris } from '../demo/TCall';
+
+const main = async (argv: string[]) => {
 	const program = require('commander');
 	program.option('-v, --verbose', 'show debug log');
 
@@ -15,6 +17,8 @@ const main = (argv: string[]) => {
 	logger.setLogLevel(ELogLevel.ERROR);
 	logger.log('this will be cyan text');
 	logger.error('this will be red text');
+	const data = await callChucknorris();
+	console.log('data', data);
 };
 
 main(process.argv);

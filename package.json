@@ -6,7 +6,7 @@
 	"bin": {
 		"chuckNorris": "lib/index.js",
 		"joke": "lib/index.js",
-		"batman-cli": "lib/src/cli.js"
+		"batman": "lib/src/cli.js"
 	},
 	"author": {
 		"name": "Jiean Yang",

@@ -7,11 +7,9 @@
  * @author Jiean Yang <https://wemediaweb.com/>
  */
 
-// import { callChucknorris } from './utils/TCall';
-
-const init = require('./utils/init.ts');
-const cli = require('./utils/cli');
-const log = require('./utils/log');
+const init = require('./demo/init');
+const cli = require('./demo/cli');
+const log = require('./demo/log');
 
 const input = cli.input;
 const flags = cli.flags;
@@ -21,11 +19,6 @@ const main = async () => {
 	init({ clear });
 	console.log('input', input);
 	input.includes(`help`) && cli.showHelp(0);
-
-	// if (input.includes('joke')) {
-	// 	const data = await callChucknorris();
-	// 	console.log(data);
-	// }
 
 	debug && log(flags);
 };
